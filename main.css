@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(Montserrat-Bold.ttf);
+}
+
+body {
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+ nav {
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+
+ }
+
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .logocontainer {
+    text-align: center;
+    align-items: center;
+    top: 50%;
+    padding-bottom: 10px;
+} 
+
+  .player {
+    cursor: pointer;
+    color: rgb(146, 217, 203);
+    text-shadow: 0 0 1px;
+    font-family: Montserrat-Bold;
+    font-size: 45px;
+    margin-bottom: -25px;
+    cursor: pointer;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translate(0, 0);
+    }
+    10% {
+      transform: translate(-5px, -5px);
+    }
+    20% {
+      transform: translate(5px, 5px);
+    }
+    30% {
+      transform: translate(10px, -10px);
+    }
+    40% {
+      transform: translate(-10px, 10px);
+    }
+    50% {
+      transform: translate(-15px, -15px);
+    }
+    60% {
+      transform: translate(15px, 15px);
+    }
+    70% {
+      transform: translate(20px, -20px);
+    }
+    80% {
+      transform: translate(-20px, 20px);
+    }
+    90% {
+      transform: translate(-25px, -25px);
+    }
+    100% {
+      transform: translate(25px, 25px);
+    }
+  }
+  
+  .player.playing {
+    color: red;
+    animation: shake 0.5s ease-in-out infinite;
+  }
+
+  h2 {
+    font-family: Montserrat-Bold;
+    margin-left: 90px;
+    color: rgb(146, 217, 203);
+  }
+
+  nav a {
+    color: rgb(146, 217, 203);
+    text-decoration: none;
+    font-family: Montserrat-Bold;
+}
+
+
+ nav a:hover {
+    color: rgb(241, 255, 252);
+    transition-delay: 150ms;
+    transition-duration: 300ms;
+ }
